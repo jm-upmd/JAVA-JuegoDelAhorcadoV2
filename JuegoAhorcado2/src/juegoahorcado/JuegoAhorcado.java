@@ -134,7 +134,7 @@ public class JuegoAhorcado {
 			
 			pintaListaLetrasUsadas();
 			
-			// resultadoTirada evalua si se ha llegado al total de fallos o se ha completado la palabra.
+			// partidaTerminada() evalua si se ha llegado al total de fallos o se ha completado la palabra.
 			// En ambos casos la partida se da por terminada y escribe el mensaje de victoria o derrota por consola,
 			// y devuelve true indicando fin de la partida.
 			// Si no se da ninguna de las condiciones anteriores devuelve false para  seguir pidiendo letras

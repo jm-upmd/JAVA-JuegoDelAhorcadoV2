@@ -198,8 +198,7 @@ public class JuegoAhorcado {
 	 * 
 	 */
 
-	private static  void hazJugada() {
-		boolean acierto = false;
+	private static void hazJugada() {
 
 		// Si la letra ya  ha sido utilizada no hace nada, solo repinta consola 
 		if (!letrasUtilizadas.contains(letra)) {
@@ -210,7 +209,6 @@ public class JuegoAhorcado {
 			for (int i = 0; i < palabraADescubrir.length(); i++) {
 				if (palabraADescubrir.charAt(i) == letra) { // Si la letra está en palabraADescubrir
 					palabraEnConstruccion[i] = letra; // la añade a palabraEnConstruccion
-					acierto = true; // ha habido acierto
 				}
 			}
 
@@ -220,6 +218,8 @@ public class JuegoAhorcado {
 			// Si letra no está en la palabra a descubrir incrementa contador de fallos.
 			contFallos = acierto ? contFallos : contFallos + 1;
 		}
+		
+		// Pinta en consola todos los elementos actualizados
 
 		borraConsola();
 		pintaPalabraEnConstruccion();

@@ -148,7 +148,7 @@ public class JuegoAhorcado {
 		borraConsola();
 		palabraADescubrir = damePalabra();
 		palabraEnConstruccion = new char[palabraADescubrir.length()];
-		inicializaPalADescubrir(); // Rellena palabraEnConstrucción con '_'.
+		inicializaPalEnConst(); // Rellena palabraEnConstrucción con '_'.
 		letrasUtilizadas.clear(); // Limpia colección de letras utilizadas.
 		letra = '_';
 		contFallos = contTiradas = 0;
@@ -231,7 +231,7 @@ public class JuegoAhorcado {
 		pintaListaLetrasUsadas();
 	}
 	
-	static private void inicializaPalADescubrir() {
+	static private void inicializaPalEnConst() {
 		for (int i = 0; i < palabraEnConstruccion.length; i++)
 			palabraEnConstruccion[i] = '_';
 	}

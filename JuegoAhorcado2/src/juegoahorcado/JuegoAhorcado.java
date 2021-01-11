@@ -128,6 +128,8 @@ public class JuegoAhorcado {
 				// Pregunta por consola si jugar otra partida
 				if (!jugarOtraPartida())
 					break; // Si no se quiere jugar otra partida entonces sale del bucle while
+				
+				nuevaPartida(); // Jugamos otra partida
 			}
 			
 		} // fin for

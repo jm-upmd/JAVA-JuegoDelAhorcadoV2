@@ -205,10 +205,11 @@ public class JuegoAhorcado {
 
 			// Pone en palabraEnConstruccion los caracteres coincidentes en
 			// palabraADescubrir
-
+			acierto = false;
 			for (int i = 0; i < palabraADescubrir.length(); i++) {
 				if (palabraADescubrir.charAt(i) == letra) { // Si la letra está en palabraADescubrir
 					palabraEnConstruccion[i] = letra; // la añade a palabraEnConstruccion
+					acierto = true;
 				}
 			}
 
